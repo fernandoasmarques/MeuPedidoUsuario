@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.lojista.LojistaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/LojistaFragment_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ToolbarTheme" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/LojistaFragment_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="auto"
+            android:elevation="4dp"/>
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/LojistaFragment_toolbarFerramentas"
+            android:layout_width="match_parent"
+            android:background="#EEEEEE"
+            android:layout_height="?attr/actionBarSize"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/LojistaFragment_pagerCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

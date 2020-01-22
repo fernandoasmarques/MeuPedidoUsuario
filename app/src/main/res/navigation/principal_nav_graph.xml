@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/principal_nav_graph"
+    app:startDestination="@id/navigation_feed">
+
+    <fragment
+        android:id="@+id/navigation_feed"
+        android:name="br.com.meupedidoapp.meupedidousuario.fragments.feed.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed">
+        <action
+            android:id="@+id/irParaLojistaFragment"
+            app:destination="@id/lojistaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_pedidos"
+        android:name="br.com.meupedidoapp.meupedidousuario.fragments.pedidos.PedidosFragment"
+        android:label="fragment_pedidos"
+        tools:layout="@layout/fragment_pedidos"/>
+    <fragment
+        android:id="@+id/navigation_enderecos"
+        android:name="br.com.meupedidoapp.meupedidousuario.fragments.enderecos.EnderecosFragment"
+        android:label="fragment_enderecos"
+        tools:layout="@layout/fragment_enderecos"/>
+
+    <fragment
+        android:id="@+id/lojistaFragment"
+        android:name="br.com.meupedidoapp.meupedidousuario.fragments.lojista.LojistaFragment"
+        android:label="fragment_lojista"
+        tools:layout="@layout/fragment_lojista" >
+        <action
+            android:id="@+id/irParaAtributoFragment"
+            app:destination="@id/escolhaProdutoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/escolhaProdutoFragment"
+        android:name="br.com.meupedidoapp.meupedidousuario.fragments.atributos.AtributosFragment"
+        android:label="fragment_escolha_produto"
+        tools:layout="@layout/fragment_atributos" >
+        <action
+            android:id="@+id/irParaItensPedidoFragment"
+            app:destination="@id/itensPedidoFragment"
+            app:popUpTo="@+id/lojistaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itensPedidoFragment"
+        android:name="br.com.meupedidoapp.meupedidousuario.fragments.itens_pedido.ItensPedidoFragment"
+        android:label="fragment_itens_pedido"
+        tools:layout="@layout/fragment_itens_pedido" />
+
+</navigation>

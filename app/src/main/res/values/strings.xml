@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Meu Pedido</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="precoString">R$ %1$s</string>
+    <string name="opcao_ad_preco">Adicional de R$ %1$s</string>
+
+    <string name="fragmentAtributos_pageCount_text">Página %1$d de %2$d</string>
+    </resources>

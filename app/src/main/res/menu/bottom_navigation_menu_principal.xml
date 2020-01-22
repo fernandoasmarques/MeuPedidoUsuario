@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_feed"
+        android:icon="@drawable/icone_restaurante"
+        android:title="Pedir"/>
+
+    <item
+        android:id="@+id/navigation_pedidos"
+        android:icon="@drawable/icone_pedidos"
+        android:title="Meus Pedidos"/>
+
+    <item
+        android:id="@+id/navigation_enderecos"
+        android:icon="@drawable/icone_enderecos"
+        android:title="Endereços"/>
+
+</menu>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:pew="http://schemas.android.com/tools"
+    android:id="@+id/itemProdutoBebRefrigerante_cardBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@android:color/darker_gray"
+    app:strokeWidth="1dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="#E0E0E0"
+            android:fontFamily="@font/googlesansregular"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="Toque para acessar"
+            android:textColor="#000000"
+            android:textSize="10dp" />-->
+
+        <TextView
+            android:id="@+id/itemProdutoBebRefrigerante_txtProdutoNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha=".7"
+            android:fontFamily="@font/unisansbold"
+            android:padding="15dp"
+            android:text="Refrigerante"
+            android:textColor="#000000"
+            android:textSize="22dp" />
+
+        <!--<ImageView
+            android:id="@+id/itemProdutoBebRefrigerante_imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorAccent"
+            android:scaleType="centerCrop" />-->
+
+        <ImageView
+            android:id="@+id/itemProdutoBebRefrigerante_imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:fitsSystemWindows="true"
+            android:nestedScrollingEnabled="true"
+            android:background="@color/colorAccent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:alpha=".6"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/googlesansregular"
+            android:gravity="center"
+            android:text="Tamanhos disponíveis:"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itemProdutoBebRefrigerante_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
